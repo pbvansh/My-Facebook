@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const SidebarRow = ({src,Icon , name}) => {
   return (
-    <div className="flex space-x-2 hover:bg-gray-100 p-3 rounded-2xl items-center">
+    <div className="flex space-x-2 hover:bg-gray-100 p-3 rounded-2xl items-center cursor-pointer">
         {src && 
             <Image src={src} width={35} height={35}
             className='rounded-full' layout="fixed"/>

@@ -4,6 +4,14 @@
 
 @layer components{
     .icon{
-        @apply hidden xl:inline-flex p-2 w-10 rounded-full text-gray-500 cursor-pointer hover:bg-gray-300
+        @apply hidden xl:inline-flex 
+        p-2 w-10 rounded-full text-gray-500 
+        cursor-pointer hover:bg-gray-300
+    }
+
+    .inputIcon{
+        @apply flex space-x-1 hover:bg-gray-100
+         flex-grow p-2 rounded-xl cursor-pointer
+         items-center justify-center
     }
 }

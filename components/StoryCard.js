@@ -5,7 +5,7 @@ const StoryCard = ({story}) => {
     <div className="relative h-14 w-14 md:h-20 md:w-20 lg:h-56 lg:w-20
                     cursor-pointer overflow-x p-3">
       <Image
-      className="rounded-full absolute opacity-0 lg:opacity-100 z-50 top-10"
+      className="rounded-full absolute opacity-0 lg:opacity-100 z-10 top-10"
         src={story.src}
         height={40}
         width={40}

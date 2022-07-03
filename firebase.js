@@ -1,11 +1,9 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import 'firebase/storage'
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
-const firebaseConfig = {
+import firebase from 'firebase/app';
+import 'firebase/firestore';
+import 'firebase/storage'
+
+const config = {
   apiKey: "AIzaSyDWSByrTsQUu7kONgWA5SJUsznJgks5IYA",
   authDomain: "my-facebook-165dc.firebaseapp.com",
   projectId: "my-facebook-165dc",
@@ -14,9 +12,11 @@ const firebaseConfig = {
   appId: "1:967903091413:web:c7a634885bfd5c243a205c"
 };
 
-// Initialize Firebase
-const app = !firebase.apps.length ? initializeApp(firebaseConfig) : firebase.app();
-const db = app.firestore();
+if(!firebase.apps.length){
+  firebase.initializeApp(config);
+}
+
+const firestore = firebase.firestore();
 const storage = firebase.storage();
 
-export { bd,storage };
+export {firestore,storage}
